@@ -53,22 +53,8 @@ namespace Examples.Entities
         /// <returns></returns>
         public override bool Equals(object obj)
         {
-            // Null Check
-            if(obj is null)
-            {
-                return false;
-            }
-            // Instance Check
-            if(ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-            // Type Check
-            if(obj.GetType() != GetType())
-            {
-                return false;
-            }
-            // Cast obj to employee and make Employee.Equals handle it
+            // Cast obj to employee and make the other Equals handle it,
+            // obj will be null if the cast fails because of the "as" keyword
             return Equals(obj as Employee);
         }
         #endregion
@@ -81,7 +67,7 @@ namespace Examples.Entities
         public override int GetHashCode()
         {
             // Tell CLR we dont care if it overflows or underflows in this instance
-           unchecked
+            unchecked
             {
                 // Prime number so hash collision is more unlikely to happen
                 int hash = 17;

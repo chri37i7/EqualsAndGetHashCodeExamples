@@ -20,15 +20,15 @@ namespace Examples.ConsoleApp
             // Test object equality
             TestObjectEquality();
 
-            Console.Clear();
+            //Console.Clear();
 
-            // Test Employee equality
-            TestEmployeeEquality();
+            //// Test Employee equality
+            //TestEmployeeEquality();
 
-            Console.Clear();
+            //Console.Clear();
 
-            // Test GetHashCode
-            TestGetHashCode();
+            //// Test GetHashCode
+            //TestGetHashCode();
         }
 
         #region Object.Equals Test
@@ -38,7 +38,7 @@ namespace Examples.ConsoleApp
         static void TestObjectEquality()
         {
             // Create two different objects
-            Random random = new Random();
+            Random random = null;
 
             // Equal checks
             bool isfirstSameAsRandom = firstEmployee.Equals(random);
