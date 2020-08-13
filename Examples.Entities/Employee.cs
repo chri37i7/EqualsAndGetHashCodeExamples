@@ -29,12 +29,14 @@ namespace Examples.Entities
         /// <returns></returns>
         public bool Equals(Employee employee)
         {
+            // Null check
             if(employee == null)
             {
                 return false;
             }
             else
             {
+                // Returns true if all properties match, else it returns false
                 return string.Equals(Firstname, employee.Firstname) &&
                        string.Equals(Lastname, employee.Lastname) &&
                                 Age == employee.Age &&
@@ -51,18 +53,22 @@ namespace Examples.Entities
         /// <returns></returns>
         public override bool Equals(object obj)
         {
+            // Null Check
             if(obj is null)
             {
                 return false;
             }
+            // Instance Check
             if(ReferenceEquals(this, obj))
             {
                 return true;
             }
+            // Type Check
             if(obj.GetType() != GetType())
             {
                 return false;
             }
+            // Cast obj to employee and make Employee.Equals handle it
             return Equals(obj as Employee);
         }
         #endregion
