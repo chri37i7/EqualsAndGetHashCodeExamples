@@ -8,7 +8,7 @@ namespace Examples.ConsoleApp
     /// </summary>
     public class Program
     {
-        #region Static fields
+        #region Static Fields
         // Employee objects
         static readonly Employee firstEmployee = new Employee("Hans", "Hansen", 27, new DateTime(1993, 8, 13));
         static readonly Employee secondEmployee = new Employee("Hans", "Hansen", 27, new DateTime(1993, 8, 13));
