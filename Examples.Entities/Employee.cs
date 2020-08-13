@@ -27,7 +27,7 @@ namespace Examples.Entities
         /// </summary>
         /// <param name="employee"></param>
         /// <returns></returns>
-        public bool Equals(Employee employee)
+        public virtual bool Equals(Employee employee)
         {
             // Null check
             if(employee == null)
