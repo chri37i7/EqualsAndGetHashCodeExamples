@@ -43,7 +43,7 @@ namespace Examples.Entities
         }
         #endregion
 
-        #region object.Equals method override
+        #region Object.Equals Method Override
         /// <summary>
         /// Compares an object with the current object to check if they match
         /// </summary>
@@ -67,7 +67,7 @@ namespace Examples.Entities
         }
         #endregion
 
-        #region object.GetHashCode method override
+        #region Object.GetHashCode Method Override
         /// <summary>
         /// Generates a unique number which only an object with exact same values should be able to provide
         /// </summary>
