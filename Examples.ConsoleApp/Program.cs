@@ -1,6 +1,5 @@
 ﻿using Examples.Entities;
 using System;
-using System.IO;
 
 namespace Examples.ConsoleApp
 {
